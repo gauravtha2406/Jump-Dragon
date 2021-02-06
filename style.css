@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+ overflow: hidden;
+ 
+
+}
+.game-container{
+    background-image: url(b.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height:100vh;
+  
+
+  
+
+}
+
+
+.owner{
+    font-size: 1rem;
+    color: black;
+}
+
+.game-title{
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: transparent;
+    background-color: #8566aa;
+    color: #fff;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.1);
+    padding: 6px 0 2px 0;
+    text-shadow: 0 2px 2px black;
+    margin-bottom:8px;
+}
+
+.gamepoints{
+    position: absolute;
+    right: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1rem;
+    border: 2px solid #d4d4e3;
+    padding: 12px 6px;
+    
+}
+.game-over{
+    text-align: center;
+    font-weight: 700 ;
+    outline: #302e4d;
+    font-size: 2.2rem;
+
+}
+.stage{
+    text-align: center;
+    font-weight: 700 ;
+    outline: #302e4d;
+    font-size: 2.2rem;
+}
+.dino{
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width:233px;
+    height: 114px;
+    position: absolute;
+    bottom: 0px;
+    left: 29px;
+    
+}
+
+.obstacle{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width:160px;
+    height: 105px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.animatedino{
+    animation: dino 0.8s linear ;
+}
+.obstacleani{
+    animation: obstacle 5s linear infinite;
+}
+
+@keyframes dino{
+    0%{
+        bottom: 0px;
+
+    }
+    50%{
+        right:150px;
+        bottom: 470px;
+    }
+    100%{
+     
+        bottom: 0px;
+    }
+}
+
+@keyframes obstacle{
+0%{
+    left: 100vw;
+}
+
+100%{
+    left: -10vw;
+}
+
+}
+
+.dragonjump{
+    animation: dragonjump 0.6s linear;
+}
+
+@keyframes dragonjump{
+0%{
+    bottom: 0px;
+}
+25%{
+    bottom: 250px;
+    left: 0px;
+}
+50%{
+    bottom:450px;
+}
+75%{
+    right: 740px;
+}
+100%{
+    right: 800px;
+   
+}
+
+}
